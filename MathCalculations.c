@@ -1,8 +1,8 @@
 ﻿#include<stdio.h>
 #include<math.h>
 
-const double X_MIN = -1.0e+150;
-const double X_MAX =  1.0e+150;
+const double X_MIN = -1.0e+7;
+const double X_MAX =  1.0e+7;
 const double X_BORDER_LEFT  = -3.0;
 const double X_BORDER_RIGHT =  3.0;
 
@@ -21,8 +21,8 @@ int main (void) {
     printf("Please enter x:\n");
     x = inputNumber();
 
-    printf("z1 = %lf\n", calculateZ1(x));
-    printf("z2 = %lf\n", calculateZ2(x));
+    printf("z1 = %.16lf\n", calculateZ1(x));
+    printf("z2 = %.16lf\n", calculateZ2(x));
 
     return 0;
 }
