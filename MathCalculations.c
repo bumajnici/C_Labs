@@ -1,4 +1,5 @@
-﻿#include<stdio.h>
+﻿#include"my_lib.h"
+#include<stdio.h>
 #include<math.h>
 
 const double X_MIN = -1.0e+7;
@@ -6,7 +7,6 @@ const double X_MAX =  1.0e+7;
 const double X_BORDER_LEFT  = -3.0;
 const double X_BORDER_RIGHT =  3.0;
 
-void printHeader();
 void printValidation();
 double inputNumber();
 double calculateZ1(double x);
@@ -14,6 +14,7 @@ double calculateZ2(double x);
 
 int main (void) {
     printHeader();
+    printf("\n");
     printValidation();
 
     double x;
@@ -25,10 +26,6 @@ int main (void) {
     printf("z2 = %.16lf\n", calculateZ2(x));
 
     return 0;
-}
-
-void printHeader () {
-    printf("Variant:\t16\nAuthor:\t\tMykola Ponomarenko\n");
 }
 
 void printValidation() {

@@ -5,5 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 
-add_executable(C_Labs
-        MathCalculations.c)
+add_executable(MathApp MathCalculations.c my_lib.c)
+
+add_executable(StringApp Strings.c my_lib.c)
