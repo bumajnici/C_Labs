@@ -1,4 +1,5 @@
-﻿#include<stdio.h>
+﻿#include"my_lib.h"
+#include<stdio.h>
 #include<stdlib.h>
 
 typedef struct {
@@ -26,6 +27,8 @@ void insertNodeAtTail(Node ** head, Data data);
 void insertNode(Node ** head, Data data, int position);
 
 int main(void) {
+    printDuck(getHeader());
+
     Node *head = NULL;
 
     Data book1 = {"Harry Potter and the Philosopher's Stone", 120.0f, 240, "Ukrainian", 0.225f, 2025};
