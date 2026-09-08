@@ -8,3 +8,5 @@ include_directories(.)
 add_executable(MathApp MathCalculations.c my_lib.c)
 
 add_executable(StringApp Strings.c my_lib.c)
+
+add_executable(LinkedListApp LinkedList.c my_lib.c)
